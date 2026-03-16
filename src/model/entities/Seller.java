@@ -14,7 +14,7 @@ public class Seller implements Serializable{
 	private LocalDate birthdate;
 	private Double baseSalary;
 	
-	private Department department;
+	private Department department; // um objeto de outra classe que é necessário para instanciar objetos dessa classe
 	
 	public Seller() {
 	}
