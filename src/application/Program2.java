@@ -23,8 +23,10 @@ public class Program2{
 			System.out.println(d);
 		}
 		
-		
-		
+		System.out.println("\n=== test 3: Department insert ===");
+		Department dep2 = new Department(null, "Pesquisa");
+		DepartmentDao departmentdao2 = DaoFactory.createDepartmentDao();
+		departmentdao2.insert(dep2);
 		
 	}	
 }
