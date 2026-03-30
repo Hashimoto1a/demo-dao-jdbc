@@ -22,11 +22,20 @@ public class Program2{
 		for(Department d: deps) {
 			System.out.println(d);
 		}
-		
+		/*
 		System.out.println("\n=== test 3: Department insert ===");
 		Department dep2 = new Department(null, "Pesquisa");
 		DepartmentDao departmentdao2 = DaoFactory.createDepartmentDao();
 		departmentdao2.insert(dep2);
+		*/
+		
+		System.out.println("\n=== test 4: Department update ===");
+		Department dep3 = new Department();
+		DepartmentDao departmentdao3 = DaoFactory.createDepartmentDao();
+		dep3 = departmentdao3.findById(5);
+		dep3.setName("research");
+		departmentdao.update(dep3);
+		System.out.println("update completed");
 		
 	}	
 }
